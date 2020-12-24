@@ -9,5 +9,10 @@
   </p>
   {{ post.body|linebreaks }}
 
-  <a href="https://www.bookfinder.com/" title="BookFinder.com: New &amp; Used Books, Rare Books, Textbooks, Out of Print"><img border="0" src="https://d3uahvj51kpljk.cloudfront.net/images/site/title/sites/www.bookfinder.com.gif" alt="BookFinder.com" /></a>
+  <p>
+    <a href="{% url "blog:post_share" post.id %}">
+      Share this post
+    </a>
+  </p>
+
 {% endblock %}
