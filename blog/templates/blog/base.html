@@ -8,6 +8,7 @@
   <link href="{% static "css/blog.css" %}" rel="stylesheet">
 </head>
 <body>
+  <a class = "b-hm" href="{% url 'blog:post_list' %}">Blog Home</a>
   <div id="content">
     {% block content %}
     {% endblock %}

@@ -5,6 +5,10 @@
 
 {% block content %}
   <h1>My Blog</h1>
+  <button><a href="{%url 'blog:post_search' %}">Search for post</a></button>
+ 
+
+
   {% if tag %}
     <h2>Posts tagged with "{{ tag.name }}"</h2>
   {% endif %}
