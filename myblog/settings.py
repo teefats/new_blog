@@ -87,9 +87,14 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'blog',
         'USER': 'postgres',
-        'PASSWORD': 'Tunde_3483',
+        'PASSWORD': str(os.getenv('PASSWORD')),
     }
 }
+
+
+
+
+
 
 
 # Password validation
